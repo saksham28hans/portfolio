@@ -2,6 +2,7 @@ import React from 'react';
 import { SocialIcon } from "react-social-icons";
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 type Props = {}
 
@@ -34,12 +35,15 @@ const Header = (props: Props) => {
         fgColor='gray'
         bgColor='transparent'
         />
-       <SocialIcon
+       {/* <SocialIcon
         url='https://leetcode.com/sak97hans/'
         fgColor='gray'
         bgColor='transparent'
         network='leetcode'
-        />
+        /> */}
+   <Link href="https://leetcode.com/sak97hans/"> 
+     <Image src='/images/saksham.jpg' alt='Profile Picture' width={500} height={500} className='relative rounded-full mx-auto object-cover w-32 h-32'></Image>
+   </Link>
      </motion.div>
      
      <motion.div
