@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Skill from './Skill'
+import { skills } from '../data/skill.js';
 type Props = {}
 
 const Skills = (props: Props) => {
@@ -22,22 +23,24 @@ const Skills = (props: Props) => {
         </h3>
 
         <div className='grid grid-cols-4 gap-5'>
-           <Skill />
-           <Skill />
-           <Skill />
-           <Skill />
-           <Skill />
-           <Skill />
-           <Skill />
-           <Skill />
-           <Skill />
-           <Skill />
-           <Skill />
-           <Skill />
-           <Skill />
-           <Skill />
-           <Skill />
-           <Skill />
+        {skills.map((skill,i)=>(
+            <Skill key={i} directionLeft={skill.directionLeft} imgUrl ={skill.imgUrl} proficiency={skill.proficiency}/>
+        ))}
+           {/* <Skill directionLeft={true} imgUrl ='/images/react.png'/>
+           <Skill directionLeft={true} imgUrl ='/images/nodejs.png'/>
+           <Skill directionLeft={true}imgUrl ='/images/mongodb.png'/>
+           <Skill directionLeft={true} imgUrl ='/images/javascript.png'/>
+           <Skill directionLeft={true} imgUrl ='/images/express.png'/>
+           <Skill directionLeft={true} imgUrl ='/images/nextjs.png'/>
+           <Skill directionLeft={true} imgUrl ='/images/redux.png'/>
+           <Skill directionLeft={true} imgUrl ='/images/html.png'/>
+           <Skill imgUrl ='/images/python.png'/>
+           <Skill imgUrl ='/images/c++.png'/>
+           <Skill imgUrl ='/images/java.png'/>
+           <Skill imgUrl ='/images/firebase.png'/>
+           <Skill imgUrl ='/images/abap.png'/>
+           <Skill imgUrl ='/images/bp.png'/>
+           <Skill imgUrl ='/images/css.png'/> */}
         </div>
 
     </motion.div>
