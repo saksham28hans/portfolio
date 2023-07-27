@@ -38,6 +38,7 @@ const Header = (props: Props) => {
         url='https://leetcode.com/sak97hans/'
         fgColor='gray'
         bgColor='transparent'
+        network='leetcode'
         />
      </motion.div>
      
