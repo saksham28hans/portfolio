@@ -40,9 +40,10 @@ const Header = (props: Props) => {
         fgColor='gray'
         bgColor='transparent'
         network='leetcode'
+        defaultSVG={}
         /> */}
    <Link href="https://leetcode.com/sak97hans/"> 
-     <Image src='/images/saksham.jpg' alt='Profile Picture' width={500} height={500} className='relative rounded-full mx-auto object-cover w-32 h-32'></Image>
+     <Image src='/images/saksham.jpg' alt='Profile Picture' width={500} height={500} className='relative rounded-full mx-auto object-cover w-5 h-5 bg-transparent'></Image>
    </Link>
      </motion.div>
      
