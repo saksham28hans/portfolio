@@ -35,7 +35,7 @@ const Header = (props: Props) => {
         bgColor='transparent'
         />
        <SocialIcon
-        url='https://www.linkedin.com/in/saksham-hans-693077116/'
+        url='https://leetcode.com/sak97hans/'
         fgColor='gray'
         bgColor='transparent'
         />
